@@ -1,0 +1,78 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>index</title>
+    <script src="../dist/scroll/scroll.js"></script>
+</head>
+<style>
+    #container {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        bottom: 20px;
+        right: 240px;
+        border: 5px solid black;
+        cursor: default;
+        overflow: hidden;
+
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+    }
+
+    #content {
+        background: white;
+        -webkit-transform-origin: left top;
+        -webkit-transform: translateZ(0);
+        -moz-transform-origin: left top;
+        -moz-transform: translateZ(0);
+        -ms-transform-origin: left top;
+        -ms-transform: translateZ(0);
+        -o-transform-origin: left top;
+        -o-transform: translateZ(0);
+        transform-origin: left top;
+        transform: translateZ(0);
+    }
+</style>
+
+<body>
+
+    <div id="container">
+        <div id="content">
+            <div>乱七八糟的内容</div>
+            <div>乱七八糟的内容</div>
+            <div>乱七八糟的内容</div>
+            <div>乱七八糟的内容</div>
+            <div>乱七八糟的内容</div>
+        </div>
+    </div>
+    <script>
+        /*使用
+* new Scroll(container,content,{
+* start:function(){},
+*  end:function(){},
+*   move:function(){},
+* })
+* */
+        var contentWidth = 2000;
+        var contentHeight = 2000;
+        var container = document.getElementById("container");
+        var content = document.getElementById("content");
+        content.style.width = contentWidth + "px";
+        content.style.height = contentHeight + "px";
+
+        console.log(tScroll.default)
+        new tScroll.default(container, content, {
+            start: function () { },
+            end: function () { },
+            move: function () { },
+        })
+    </script>
+</body>
+
+</html>

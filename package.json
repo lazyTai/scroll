@@ -1,0 +1,36 @@
+{
+  "name": "t-scroll",
+  "version": "1.0.0",
+  "description": "scroll",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp dev",
+    "build": "node ./build/prodBuild"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lazyTai/scroll.git"
+  },
+  "author": "lazyTai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lazyTai/scroll/issues"
+  },
+  "homepage": "https://github.com/lazyTai/scroll#readme",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "express": "^4.16.3",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "gulp": "^3.9.1",
+    "style-loader": "^0.20.3",
+    "webpack": "^3.10.0",
+    "webpack-dev-middleware": "^2.0.4",
+    "webpack-hot-middleware": "^2.21.0"
+  }
+}
